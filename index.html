@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Paralax Webpage</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="#" class="logo">LOGO</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="./images/stars.png" id="stars" />
+      <img src="./images/moon.png" id="moon" />
+      <img src="./images/mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">Moon Light</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="./images/mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Parallax Scrolling Effects</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+        praesentium saepe consequuntur eos dolore fugit odit expedita quaerat
+        sequi ab minus illo aperiam, libero eaque voluptates iste?
+        Necessitatibus, quam nam! Et aspernatur enim sunt iusto. Est iure qui
+        facilis sint, expedita minima error suscipit eos odit libero enim
+        placeat fugit omnis rerum consequatur incidunt. Voluptatibus
+        perspiciatis perferendis incidunt. Rem, repudiandae! Id praesentium
+        exercitationem tempore libero adipisci, perferendis obcaecati, quibusdam
+        et perspiciatis autem velit cumque atque magni error blanditiis commodi
+        maiores soluta ullam debitis suscipit qui veniam possimus cum nobis!
+        Aut?
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        deserunt consequatur animi officiis veritatis, quasi quisquam itaque
+        voluptates, eos repellendus, debitis delectus eum aperiam. Sunt,
+        sapiente! Placeat doloribus ducimus architecto. Molestias ea quia
+        explicabo officiis recusandae? Labore omnis ut minus pariatur alias
+        corrupti porro incidunt non exercitationem id sequi dignissimos totam
+        cupiditate, eos dolorum! Facilis deleniti necessitatibus odio totam
+        exercitationem. Blanditiis perferendis facere numquam nostrum velit,
+        quaerat autem ratione assumenda, incidunt doloribus aperiam illum
+        repudiandae, officiis perspiciatis optio voluptatum labore amet quod
+        dolor iure quibusdam tempore. Consectetur cum accusamus qui. Obcaecati
+        veritatis, quod aspernatur, atque doloribus beatae corporis ut nobis
+        sequi voluptas error esse id fugiat vitae nisi illo magnam iure
+        provident quibusdam magni libero autem aliquid? Neque, inventore
+        pariatur.
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        deserunt consequatur animi officiis veritatis, quasi quisquam itaque
+        voluptates, eos repellendus, debitis delectus eum aperiam. Sunt,
+        sapiente! Placeat doloribus ducimus architecto. Molestias ea quia
+        explicabo officiis recusandae? Labore omnis ut minus pariatur alias
+        corrupti porro incidunt non exercitationem id sequi dignissimos totam
+        cupiditate, eos dolorum! Facilis deleniti necessitatibus odio totam
+        exercitationem. Blanditiis perferendis facere numquam nostrum velit,
+        quaerat autem ratione assumenda, incidunt doloribus aperiam illum
+        repudiandae, officiis perspiciatis optio voluptatum labore amet quod
+        dolor iure quibusdam tempore. Consectetur cum accusamus qui. Obcaecati
+        veritatis, quod aspernatur, atque doloribus beatae corporis ut nobis
+        sequi voluptas error esse id fugiat vitae nisi illo magnam iure
+        provident quibusdam magni libero autem aliquid? Neque, inventore
+        pariatur.
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        deserunt consequatur animi officiis veritatis, quasi quisquam itaque
+        voluptates, eos repellendus, debitis delectus eum aperiam. Sunt,
+        sapiente! Placeat doloribus ducimus architecto. Molestias ea quia
+        explicabo officiis recusandae? Labore omnis ut minus pariatur alias
+        corrupti porro incidunt non exercitationem id sequi dignissimos totam
+        cupiditate, eos dolorum! Facilis deleniti necessitatibus odio totam
+        exercitationem. Blanditiis perferendis facere numquam nostrum velit,
+        quaerat autem ratione assumenda, incidunt doloribus aperiam illum
+        repudiandae, officiis perspiciatis optio voluptatum labore amet quod
+        dolor iure quibusdam tempore. Consectetur cum accusamus qui. Obcaecati
+        veritatis, quod aspernatur, atque doloribus beatae corporis ut nobis
+        sequi voluptas error esse id fugiat vitae nisi illo magnam iure
+        provident quibusdam magni libero autem aliquid? Neque, inventore
+        pariatur.
+      </p>
+    </div>
+
+    <script>
+      const stars = document.getElementById("stars");
+      const moon = document.getElementById("moon");
+      const mountains_behind = document.getElementById("mountains_behind");
+      const mountains_front = document.getElementById("mountains_front");
+
+      const text = document.getElementById("text");
+      const btn = document.getElementById("btn");
+
+      window.addEventListener("scroll", function () {
+        const value = window.scrollY;
+        stars.style.left = value + "px";
+      });
+    </script>
+  </body>
 </html>
